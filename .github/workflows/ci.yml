@@ -35,9 +35,10 @@ jobs:
     # Semgrep
     - name: Semgrep
       uses: returntocorp/semgrep-action@v1
+      continue-on-error: true
       with:
         config: "p/default" 
-        continue-on-error: true
+        
 
     #  Gitleaks
     - name: Gitleaks
