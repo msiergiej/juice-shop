@@ -32,6 +32,9 @@ jobs:
         format: "ALL"
         out: "dependency-check-report"
         args: "--disableArchive" # Był błąd z zaszyfrowanymi zipami
+        
+    - name: Wyświetl raport Dependency-Check
+      run: cat dependency-check-report/dependency-check-report.json
     # Semgrep
     - name: Semgrep
       uses: returntocorp/semgrep-action@v1
