@@ -31,7 +31,7 @@ jobs:
         project: "juice-shop"
         format: "ALL"
         out: "dependency-check-report"
-        args: "-DarchiveAnalyzer.enabled=false" # Był błąd z zaszyfrowanymi zipami
+        args: "--disableArchive" # Był błąd z zaszyfrowanymi zipami
     # Semgrep
     - name: Semgrep
       uses: returntocorp/semgrep-action@v1
