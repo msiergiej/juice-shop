@@ -26,6 +26,7 @@ jobs:
 
     # Dependency-Check
     - name: Instalacja dependencji
+      run: |
         cd frontend
         npm ci
         
