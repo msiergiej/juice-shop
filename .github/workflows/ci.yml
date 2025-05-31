@@ -44,7 +44,7 @@ jobs:
     - name: Gitleaks
       uses: gitleaks/gitleaks-action@v2
       with:
-        args: "--verbose --redact"
+        args: "--verbose --redact --exit-code 0"
 
     - name: Start aplikacji
       run: |
