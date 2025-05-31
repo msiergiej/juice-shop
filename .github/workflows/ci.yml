@@ -28,7 +28,7 @@ jobs:
     - name: Instalacja dependencji
       run: |
         cd frontend
-        npm install
+        npm install --legacy-peer-deps
         
     - name: Dependency-Check
       uses: dependency-check/Dependency-Check_Action@main
